@@ -249,3 +249,101 @@ footer {
     border-color: #e50914; /* El borde cambia a rojo al interactuar */
     cursor: pointer;
 }
+
+/* ==========================================
+   5. ESTILOS PARA LA PÁGINA DE CATÁLOGO
+   ========================================== */
+/* Contenedor de la introducción del catálogo */
+.catalog-intro {
+    max-width: 900px;
+    margin: 50px auto 30px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.catalog-intro h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.catalog-intro p {
+    color: #aaaaaa;
+}
+
+/* El contenedor Flexbox solicitado por el profesor */
+.movies-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas bajen a la siguiente línea si no caben */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    gap: 30px; /* Separación inteligente entre películas */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo de cada tarjeta de película */
+.movie-card {
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    overflow: hidden; /* Corta las esquinas de la imagen para que sigan el radio de la tarjeta */
+    width: 300px; /* Ancho fijo para cada póster */
+    border: 1px solid #2d2d2d;
+    display: flex;
+    flex-direction: column; /* Organiza la imagen y la info una arriba de la otra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Imagen del póster */
+.movie-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; /* Ajusta la imagen perfectamente sin deformarla */
+    background-color: #333; /* Fondo gris por mientras cargan imágenes */
+}
+
+/* Contenedor de los textos dentro de la tarjeta */
+.movie-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Hace que el contenedor de texto ocupe el espacio disponible */
+    justify-content: space-between; /* Empuja el botón siempre hacia abajo */
+}
+
+.movie-info h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.movie-info p {
+    font-size: 0.9rem;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+/* Botón de "Ver detalles" */
+.btn-details {
+    display: inline-block;
+    text-align: center;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 10px 0;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Interacción con el botón */
+.btn-details:hover {
+    background-color: #e50914;
+    border-color: #e50914;
+}
+
+/* Efecto hover en toda la tarjeta de película */
+.movie-card:hover {
+    transform: scale(1.03); /* Agranda sutilmente la tarjeta al pasar el mouse */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
