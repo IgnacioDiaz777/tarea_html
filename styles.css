@@ -177,3 +177,75 @@ footer {
     color: #ff1a25;
     text-decoration: underline; /* Subrayado solo en el hover */
 }
+
+/* ==========================================
+   4. ESTILOS PARA LA PÁGINA DE BIENVENIDA
+   ========================================== */
+/* Contenedor del gran mensaje de bienvenida */
+.welcome-banner {
+    max-width: 900px;
+    margin: 50px auto; /* Centra el bloque horizontalmente y le da margen arriba/abajo */
+    padding: 0 20px;
+    text-align: center;
+}
+
+.welcome-banner h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.welcome-banner p {
+    font-size: 1.1rem;
+    color: #cccccc;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Sección de Categorías */
+.categories-section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.categories-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    border-left: 4px solid #e50914; /* Pequeño detalle rojo al lado del título */
+    padding-left: 10px;
+}
+
+/* El contenedor Grid solicitado por el profesor */
+.grid-categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
+    gap: 25px; /* Separación automática entre las tarjetas */
+}
+
+/* Estilo individual para cada tarjeta de categoría */
+.category-card {
+    background-color: #1f1f1f; /* Un gris un poco más claro que el fondo del body */
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #2d2d2d;
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Efecto de movimiento suave */
+}
+
+.category-card h4 {
+    font-size: 1.3rem;
+    color: #e50914;
+    margin-bottom: 12px;
+}
+
+.category-card p {
+    font-size: 0.95rem;
+    color: #aaaaaa;
+}
+
+/* Pseudoclase :hover para que la tarjeta reaccione al pasar el mouse */
+.category-card:hover {
+    transform: translateY(-5px); /* Eleva la tarjeta sutilmente */
+    border-color: #e50914; /* El borde cambia a rojo al interactuar */
+    cursor: pointer;
+}
