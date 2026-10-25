@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineClub - Catálogo de Películas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado y Barra de Navegación Constante -->
+    <header>
+        <div class="logo">
+            <h1>🎬 CineClub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="login.html">Inicio de Sesión</a></li>
+                <li><a href="bienvenida.html">Bienvenida</a></li>
+                <li><a href="contenido.html" class="active">Catálogo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal: El Catálogo de Películas -->
+    <main class="catalog-container">
+        <section class="catalog-intro">
+            <h2>Catálogo Especial de Estrenos</h2>
+            <p>Descubre nuestra selección destacada de la semana. Haz clic en los detalles para conocer más sobre cada producción.</p>
+        </section>
+
+        <!-- Contenedor general de las tarjetas -->
+        <section class="movies-grid">
+            
+            <!-- Tarjeta de Película 1 -->
+            <article class="movie-card">
+                <!-- Por ahora dejamos un texto alternativo (alt), luego buscaremos imágenes reales -->
+                <img src="https://placeholder.com" alt="Poster de Interstellar" class="movie-img">
+                <div class="movie-info">
+                    <h3>Interstellar</h3>
+                    <p>Un grupo de científicos y exploradores viaja a través de un agujero de gusano en el espacio para encontrar un nuevo hogar para la humanidad.</p>
+                    <a href="#" class="btn-details">Ver detalles</a>
+                </div>
+            </article>
+
+            <!-- Tarjeta de Película 2 -->
+            <article class="movie-card">
+                <img src="https://placeholder.com" alt="Poster de Inception" class="movie-img">
+                <div class="movie-info">
+                    <h3>Inception</h3>
+                    <p>Un ladrón profesional que roba secretos corporativos a través del uso de la tecnología de compartir sueños recibe la tarea inversa de plantar una idea.</p>
+                    <a href="#" class="btn-details">Ver detalles</a>
+                </div>
+            </article>
+
+            <!-- Tarjeta de Película 3 -->
+            <article class="movie-card">
+                <img src="https://placeholder.com" alt="Poster de El Caballero de la Noche" class="movie-img">
+                <div class="movie-info">
+                    <h3>The Dark Knight</h3>
+                    <p>Batman se enfrenta al Joker, un genio criminal que desata la anarquía en Gotham City y pone a prueba los límites morales del héroe.</p>
+                    <a href="#" class="btn-details">Ver detalles</a>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 CineClub. Desarrollado con fines académicos.</p>
+    </footer>
+
+</body>
+</html>
