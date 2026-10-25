@@ -1,0 +1,69 @@
+/* ==========================================
+   1. ESTILOS GLOBALES Y CONFIGURACIÓN BASE
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Controla el espaciado interior sin romper los tamaños */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #141414; /* Fondo oscuro estilo cinema */
+    color: #ffffff; /* Texto blanco principal */
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none; /* Quita el subrayado feo de los enlaces */
+    color: inherit;
+}
+
+ul {
+    list-style: none; /* Quita los puntos de las listas de navegación */
+}
+
+/* ==========================================
+   2. ENCABEZADO Y COMPONENTES REUTILIZABLES
+   ========================================== */
+header {
+    background-color: #000000;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between; /* Alinea el logo a la izquierda y nav a la derecha */
+    align-items: center;
+    border-bottom: 3px solid #e50914; /* Línea roja vibrante de acento */
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: #e50914; /* Rojo característico */
+}
+
+nav ul {
+    display: flex;
+    gap: 20px; /* Separación inteligente entre enlaces usando Flexbox */
+}
+
+nav a {
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Efecto suave al pasar el mouse */
+}
+
+/* Pseudoclase :hover para la interacción del usuario */
+nav a:hover, nav a.active {
+    background-color: #e50914;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #808080;
+    font-size: 0.9rem;
+}
