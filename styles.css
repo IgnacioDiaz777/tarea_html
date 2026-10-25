@@ -347,3 +347,50 @@ footer {
     transform: scale(1.03); /* Agranda sutilmente la tarjeta al pasar el mouse */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
 }
+
+/* ==========================================
+   6. DISEÑO RESPONSIVO (MEDIA QUERY)
+   ========================================== */
+/* Cuando la pantalla sea de 768px de ancho o menos (Celulares y Tablets) */
+@media (max-width: 768px) {
+    
+    /* Cambia el menú del encabezado a formato vertical */
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column; /* Pone los enlaces uno abajo del otro */
+        gap: 10px;
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+        width: 100%; /* El botón ocupa todo el ancho disponible en celulares */
+    }
+
+    /* Adapta el banner de bienvenida */
+    .welcome-banner h2 {
+        font-size: 1.8rem; /* Reduce un poco el tamaño del título */
+    }
+
+    /* Transforma el Grid de categorías de 3 columnas a 1 sola columna */
+    .grid-categories {
+        grid-template-columns: 1fr;
+    }
+
+    /* Ajusta el contenedor de películas */
+    .movies-grid {
+        padding: 10px;
+    }
+
+    /* Hace que las tarjetas aprovechen mejor el espacio en pantallas pequeñas */
+    .movie-card {
+        width: 100%;
+        max-width: 340px;
+    }
+}
